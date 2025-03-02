@@ -210,8 +210,8 @@ header button{
 
 .theme:hover{
     background-color: white;
-    padding-inline: 1.5rem;
 }
+
 .next{
     padding: 0.5rem;
     background-color: #D3D3D3;
@@ -253,6 +253,7 @@ header button{
 .choosen-material{
     color:#1a6abf;
 }
+
 .material:hover{
     color:#1a6abf
 }
