@@ -146,6 +146,10 @@
         height: 4rem
     }
 
+    .theme:hover{
+        padding-inline: 0.5rem
+    }
+
     .lesson-title{
         font-size: 1.25rem;
         width: fit-content;

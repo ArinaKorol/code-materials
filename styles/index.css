@@ -210,6 +210,7 @@ header button{
 
 .theme:hover{
     background-color: white;
+    padding-inline: 1.5rem
 }
 
 .next{
