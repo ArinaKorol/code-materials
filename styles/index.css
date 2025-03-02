@@ -1,0 +1,302 @@
+body{
+    margin-inline: 5rem;
+    margin-top: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 3.3rem;
+}
+
+.wrap{
+    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 720px);
+}
+
+button{
+    transition: .3s;
+}
+button:hover{
+	transform: scale(1.05);
+}
+
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button{
+    border: 1px solid #8B8B8B;
+    border-radius: 5.6rem;
+    padding: 0.6rem 1.25rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.exit{
+    padding: 0.75rem 1.25rem
+}
+
+.account-img{
+    border: 1px solid #3D9AFF;
+    border-radius: 10rem;
+    padding: 0.65rem 0.75rem
+}
+
+.profile{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    font-size: 0.825rem;
+    color: #8B8B8B;
+    width: max-content
+}
+
+.name{
+    color: black;
+    width: max-content;
+}
+
+.profile-text{
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem
+}
+
+.groups{
+    display: flex;
+    gap: 0.5rem;
+    line-height: 1rem;
+    align-items: center;
+}
+
+.choosen-group{
+    background-color: #3D9AFF;
+    border: none;
+    box-shadow: 0rem 0.25rem 1.125rem 0rem #D0E7FF;
+    color: white
+}
+
+/*dropdown menu*/
+
+.menu-to-choose-group{
+    display: none;
+    gap: 0.3rem;
+}
+
+.menu-icon{ 
+    display: flex;
+    padding: 0.9rem 0.625rem;
+}
+
+.menu-button {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.56rem 0.9rem;
+}
+
+.menu-button p{
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.1rem;
+    color: #8B8B8B;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.tick-up{
+    display: none;
+}
+
+.menu-button:hover .tick-up{
+    display: block;
+}
+.menu-button:hover .tick-down{
+    display: none;
+}
+.menu-icon:hover .menu-button .tick-up{
+    display: block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 0.56rem 1.56rem;
+    border-radius: 5rem;
+    border: 1px solid #8B8B8B;
+    margin-top: 0.3rem;
+}
+
+.menu-content ol{
+    text-decoration: none;
+} 
+
+.menu-content a {
+    display:flex;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color:#8B8B8B;
+}
+
+.menu-button:hover{
+    padding-right: 1rem;
+}
+
+.dropdown-menu:hover .menu-content{
+    display: block;
+}
+
+/*page-materials*/
+
+.body-materials{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.path{
+    display: flex;
+    gap: 1rem;
+    color:#8B8B8B;
+    font-size: 1rem;
+    max-height: 3rem;
+    align-items: center;
+}
+
+.themes-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.list-themes{
+    margin-top: 1.5rem;
+}
+
+.theme{
+    padding: 1.25rem;
+    border: 1px solid #8B8B8B;
+    font-size: 0.875rem;
+    border-radius: 1.25rem;
+    background-color: rgba(140, 140, 140, 0.1);
+    display: block;
+    margin-top: 0.3rem;
+    transition: .3s;
+}
+
+.list-themes a{
+    color: black
+}
+
+.choosen-theme{
+    background-color: #FFFFFF;
+    box-shadow: 0rem 0rem 0.5rem 0.5rem rgba(155, 203, 255, 0.5)
+}
+
+.theme:hover{
+    background-color: white;
+    padding-inline: 1.5rem;
+}
+.next{
+    padding: 0.5rem;
+    background-color: #D3D3D3;
+    border-radius: 1rem;
+    border: 1px solid #8B8B8B;
+    margin-top: 1.5rem;
+}
+
+.lesson-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: #3D9AFF;
+    border-radius: 0.625rem;
+    border: none;
+    padding: 0.7rem 1.25rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.date-of-lesson{
+    display: flex;
+    gap: 1rem;
+    color:#8B8B8B;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+.material{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.body-materials ol{
+    list-style-position: inside
+}
+
+.material button{
+    border-radius: 1.25rem;
+    box-shadow: 0rem 0.25rem 1.16rem 0rem #D0E7FF;
+}
+
+.themes-and-materials{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3rem;
+    background-image: url(../images/materials-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right 7rem bottom;
+    background-size: 25%;
+}
+
+.materials-of-lesson{
+    display: grid;
+    gap: 1.5rem
+}
+
+.lesson{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+.useful-links{
+    display: grid
+}
+
+.useful-links ol{
+    margin-left: 4rem;
+}
+
+.useful-links li{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-top: 1rem
+}
+
+a{
+    color:#3D9AFF
+}
+
+a::after{
+    color:#2b86e7
+}

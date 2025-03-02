@@ -1,0 +1,174 @@
+@media(max-width: 768px){
+    body{
+        margin: 1.25rem
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        max-width: max-content;
+    }
+
+    /*header*/
+    header{
+        font-weight: 500;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    header button{
+        display: none;
+    }
+
+    .switch, .exit{
+        display: none;
+    }
+
+    .menu-to-choose-group{
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .profile{
+        font-size: 0.7rem;
+    }
+
+    /*main-content*/
+    .blue-block, .orange-block, .violet-block{
+        box-shadow: none;
+        width: 21rem
+    }
+    /*blue-block*/
+    .blueblock-title{
+        padding: 2.5rem 1.25rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        align-items:  center;
+    }
+
+    .blue-block{
+        height: 6.25rem;
+        background-image: url(../images/blue-bg-375.svg);
+        margin-bottom: 1.25rem;
+    }
+
+    .blue-block-lower{
+        display: block;
+        width: fit-content;
+    }
+
+    .recordings-of-classes, .chat-of-group, .material-and-homework{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .blue-block-button{
+        margin: 0.625rem 1.25rem 0.625rem 0rem;
+    }
+
+    /*orange-block*/
+    .orange-block{
+        background-image: url(../images/orange-bg-375.svg);
+        margin-bottom: 0.3rem;
+        display: grid;
+        height: 9.5rem;
+    }
+
+    .text-under-title{
+        max-width: 7.75rem;
+        margin-top: 0.3rem;
+        padding: 0rem;
+        margin-left: 1.25rem
+    }
+
+    .place-in-top{
+        margin-top: 0rem;
+        gap: 0.3rem;
+        align-items: center;
+    }
+
+    .place-in-group, .place-in-rating{
+        gap: 0.2rem;
+        font-size: 0.625rem;
+    }
+
+    /*violet-block*/
+    .violet-block{
+        height: 6.25rem;
+        background-image: url(../images/violet-bg-375.svg);
+        margin-bottom: 1.25rem;
+    }
+
+    .name-of-block{
+        padding: 1.25rem 1.25rem 0rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    .violet-block p{
+        display: none;
+    }
+
+    .violetblock-title{
+        font-size: 1.125rem;
+        padding-top: 0.625rem;
+    }
+    .months{
+        margin-top: 0.3rem;
+        font-size: 0.875rem;
+    }
+    
+    .month{
+        width: 21rem;
+    }
+
+
+    /*page-materials*/
+
+    .path{
+        display: none;
+    }
+
+    .list-themes{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 9rem);
+        gap: 0.3rem
+    }
+
+    .theme:last-child{
+        display: none;
+    }
+
+    .theme{
+        padding: 0.5rem;
+        align-content: center;
+        text-align: center;
+        height: 4rem
+    }
+
+    .lesson-title{
+        font-size: 1.25rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .themes-and-materials{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .materials-of-lesson{
+        gap: 1.5rem
+    }
+
+    .material{
+        font-size: 1.25rem
+    }
+
+    .useful-links a{
+        font-size: 0.8rem;
+        width: 6rem;
+    }
+}
