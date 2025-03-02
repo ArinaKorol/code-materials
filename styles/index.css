@@ -247,6 +247,14 @@ header button{
     font-size: 1.5rem;
     font-weight: 600;
     align-items: center;
+    transition: .3s linear
+}
+
+.choosen-material{
+    color:#1a6abf;
+}
+.material:hover{
+    color:#1a6abf
 }
 
 .body-materials ol{
@@ -264,7 +272,7 @@ header button{
     gap: 3rem;
     background-image: url(../images/materials-bg.jpg);
     background-repeat: no-repeat;
-    background-position: right 7rem bottom;
+    background-position: right 5rem bottom;
     background-size: 25%;
 }
 
